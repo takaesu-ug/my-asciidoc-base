@@ -1,0 +1,2 @@
+export CACOO_API_KEY=_Your_Cacoo_API_Key_Here_
+# export PATH=$PWD/vendor/bin:$PATH
