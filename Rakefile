@@ -21,11 +21,13 @@ rule '.pdf' => '.adoc' do |t|
       -r asciidoctor-diagram -r asciidoctor-diagram-cacoo #{t.source} && \
     ./vendor/bin/fopub -t #{docbook_xsl_ja_path} #{xml_file} \
       -param alignment left \
-      -param body.font.family VL-PGothic-Regular \
-      -param dingbat.font.family VL-PGothic-Regular \
-      -param monospace.font.family VL-PGothic-Regular \
-      -param sans.font.family VL-PGothic-Regular \
-      -param title.font.family VL-PGothic-Regular && \
+      -param body.font.family Meiryo \
+      -param dingbat.font.family Meiryo \
+      -param monospace.font.family Meiryo \
+      -param title.color Teal \
+      -param text.color dimgray \
+      -param sans.font.family Meiryo \
+      -param title.font.family Meiryo && \
     open #{t.name}
   }
 end
